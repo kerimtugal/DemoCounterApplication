@@ -1,0 +1,13 @@
+<resources>
+    <dimen name="margin_bottom_8dp">8dp</dimen>
+    <dimen name="margin_bottom_16dp">16dp</dimen>
+
+    <dimen name="frame_layout_200dp">200dp</dimen>
+    <dimen name="list_view_height">500dp</dimen>
+
+    <dimen name="text_size_24sp">24sp</dimen>
+
+    <dimen name="card_elevation_4dp">4dp</dimen>
+    <dimen name="card_corner_radius_12dp">12dp</dimen>
+
+</resources>

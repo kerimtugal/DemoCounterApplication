@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Material Design 3 Light Theme Colors -->
+    <color name="primary">#00BCD4</color>          <!-- Turkuaz -->
+    <color name="on_primary">#FFFFFF</color>
+    <color name="primary_container">#E0F7FA</color> <!-- Açık Turkuaz -->
+    <color name="on_primary_container">#006064</color>
+
+    <color name="secondary">#03A9F4</color>        <!-- Açık Mavi -->
+    <color name="on_secondary">#FFFFFF</color>
+    <color name="secondary_container">#E1F5FE</color>
+    <color name="on_secondary_container">#01579B</color>
+
+    <color name="tertiary">#4CAF50</color>         <!-- Yeşil -->
+    <color name="on_tertiary">#FFFFFF</color>
+    <color name="tertiary_container">#E8F5E9</color>
+    <color name="on_tertiary_container">#1B5E20</color>
+
+    <color name="error">#FF5252</color>            <!-- Canlı Kırmızı -->
+    <color name="on_error">#FFFFFF</color>
+    <color name="error_container">#FFEBEE</color>
+    <color name="on_error_container">#C62828</color>
+
+    <color name="background">#FFFFFF</color>
+    <color name="on_background">#263238</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="on_surface">#263238</color>
+    <color name="surface_variant">#ECEFF1</color>
+    <color name="on_surface_variant">#455A64</color>
+
+    <color name="outline">#90A4AE</color>
+
+    <!-- Özel Renkler - Timer için -->
+    <color name="timer_color_1">#00BCD4</color>    <!-- Turkuaz -->
+    <color name="timer_color_2">#03A9F4</color>    <!-- Açık Mavi -->
+    <color name="timer_color_3">#4CAF50</color>    <!-- Yeşil -->
+    <color name="timer_color_4">#FFC107</color>    <!-- Amber -->
+    <color name="timer_color_5">#FF9800</color>    <!-- Turuncu -->
+</resources>

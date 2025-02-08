@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background Circle - Daha belirgin bir arka plan rengi -->
+    <item>
+        <shape android:shape="ring"
+            android:innerRadiusRatio="2.3"
+            android:thickness="10dp"
+            android:useLevel="false">
+            <solid android:color="@color/surface_variant" />
+        </shape>
+    </item>
+
+    <!-- Progress Circle -->
+    <item>
+        <shape android:shape="ring"
+            android:innerRadiusRatio="2.3"
+            android:thickness="10dp"
+            android:useLevel="true">
+            <solid android:color="@color/primary" />
+        </shape>
+    </item>
+</layer-list>

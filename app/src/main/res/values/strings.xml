@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">DemoCounterApplication</string>
+
+    <string name="start_text">Start</string>
+    <string name="stop_text">Stop</string>
+    <string name="button_configure_text">Configure</string>
+    <string name="button_reset_text">Reset</string>
+    <string name="button_load_text">Load</string>
+    <string name="button_load_all_text">Load All</string>
+    <string name="button_remove_all_text">Remove All</string>
+    <string name="button_save_text">Save</string>
+    <string name="button_ok_text">Ok</string>
+
+    <string name="edit_text_limit_hint">Input limit</string>
+
+    <string name="alert_dialog_remove_all_title">Remove All Alert</string>
+    <string name="alert_dialog_remove_all_message">Are you sure to remove all the save seconds?</string>
+    <string name="alert_dialog_remove_all_positive_button_text">Yes</string>
+    <string name="alert_dialog_remove_all_negative_button_text">No</string>
+
+    <string name="alert_dialog_reset_title">Alert</string>
+    <string name="alert_dialog_reset_message">You can not save any seconds because of the limit</string>
+    <string name="alert_dialog_reset_positive_button_text">Ok</string>
+
+    <string name="main_activity_text_view_thread_1_date_time_text">Thread 1 DateTime: </string>
+    <string name="main_activity_text_view_thread_2_counters_text">Thread 2 Counters</string>
+    <string name="main_activity_text_view_view_binding_counter_text">ViewBinding Counter —> </string>
+    <string name="main_activity_text_view_data_binding_counter_text">DataBinding Counter —> </string>
+    <string name="main_activity_text_view_circular_timer_title">Circular Timer with DataBinding</string>
+    <string name="main_activity_text_view_flip_clock_title">Flip Clock with ViewBinding</string>
+    <string name="main_activity_text_view_saved_times_title">Saved Times</string>
+
+
+</resources>

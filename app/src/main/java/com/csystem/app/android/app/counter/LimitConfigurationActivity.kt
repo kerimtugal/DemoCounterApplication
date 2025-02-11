@@ -7,17 +7,33 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.databinding.DataBindingUtil
-import com.csystem.app.android.app.counter.data.service.CounterDataService
 import dagger.hilt.android.AndroidEntryPoint
 import org.csystem.app.android.app.counter.R
 import org.csystem.app.android.app.counter.databinding.ActivityConfigureBinding
+import java.lang.NumberFormatException
+import java.util.concurrent.ExecutorService
 import javax.inject.Inject
 
 @AndroidEntryPoint
-class ConfigureActivity : AppCompatActivity() {
+class LimitConfigurationActivity : AppCompatActivity() {
 
     private lateinit var mBinding: ActivityConfigureBinding
 
+    @Inject
+    @Named("threadPool")
+    lateinit var threadPool: ExecutorService
+
+    @Inject
+    lateinit var conterDataService: CounterDataService
+
+    private fun saveCallback(limit: Int) {
+        try {
+            conterDataService.setLimit(limit)
+            finish()
+        } catch (_: NumberFormatException) {
+            runOnUiThread { Toast.makeText(this, R.string.message_invalid_value, Toast.LENGTH_LONG).show() }
+        }
+    }
 
     private fun initBinding() {
         mBinding = DataBindingUtil.setContentView(this, R.layout.activity_configure)
@@ -40,8 +56,15 @@ class ConfigureActivity : AppCompatActivity() {
     }
 
     fun onSaveButtonClicked() {
-        val limit = mBinding.limit?.toInt()
+       /* val limit = mBinding.limit?.toInt()
         Intent(this, MainActivity::class.java).apply {
             putExtra("limit", limit); startActivity(this) }
+        */
+        threadPool.execute { saveCallback(mBinding.limitValue!!.toInt())}
     }
+
+    fun onNoLimitButtonClicked() = threadPool.execute {saveCallback(-1)}
+
+    fun onCloseButtonClicked() = finish()
+
 }

@@ -191,7 +191,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun onConfigureButtonClicked() {
-        Intent(this, ConfigureActivity::class.java).apply { startActivity(this) }
+        Intent(this, LimitConfigurationActivity::class.java).apply { startActivity(this) }
     }
 
     fun onStartStopButtonClicked() {

@@ -3,8 +3,8 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android">
 
     <data>
-        <import type="com.csystem.app.android.app.counter.ConfigureActivity" />
-        <variable name="activity" type="ConfigureActivity" />
+        <import type="com.csystem.app.android.app.counter.LimitConfigurationActivity" />
+        <variable name="activity" type="LimitConfigurationActivity" />
         <variable name="limit" type="String" />
     </data>
 
@@ -53,6 +53,29 @@
                     app:icon="@drawable/ic_check"
                     app:iconGravity="textStart"
                     android:onClick="@{() -> activity.onSaveButtonClicked()}"/>
+
+                <com.google.android.material.button.MaterialButton
+                    style="@style/Widget.Material3.Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/button_no_limit_text"
+                    android:textAllCaps="false"
+                    app:icon="@drawable/ic_check"
+                    app:iconGravity="textStart"
+                    android:onClick="@{() -> activity.onNoLimitButtonClicked()}"/>
+
+                <com.google.android.material.button.MaterialButton
+                    style="@style/Widget.Material3.Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/button_close_text"
+                    android:textAllCaps="false"
+                    app:icon="@drawable/ic_check"
+                    app:iconGravity="textStart"
+                    android:onClick="@{() -> activity.onCloseButtonClicked()}"/>
+
+
+
 
             </LinearLayout>
 

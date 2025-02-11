@@ -14,7 +14,7 @@
         android:theme="@style/Theme.DemoCounterApplication"
         tools:targetApi="31">
         <activity
-            android:name="com.csystem.app.android.app.counter.ConfigureActivity"
+            android:name="com.csystem.app.android.app.counter.LimitConfigurationActivity"
             android:exported="false"
             android:theme="@style/Theme.AppCombat.Dialog.Alert"/>
         <activity
